@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        background-color: hsl(210, 46%, 95%);
+        font-family: "Manrope", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        background-color: white;
+        width: 400px;
+        height: 600px;
+        border-radius: 15px;
+      }
+      #header {
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+      }
+      #header img {
+        max-width: 100%;
+        border-radius: 15px 15px 0px 0px;
+      }
+      #main {
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: white;
+        margin-top: -60px;
+        color: hsl(217, 19%, 35%);
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        text-align: left;
+        padding: 25px;
+        line-height: 25px;
+      }
+      #para2 {
+        color: hsl(212, 23%, 69%);
+      }
+
+      #footer {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        color: hsl(217, 19%, 35%);
+        font-family: "Manrope", sans-serif;
+        margin-top: 25px;
+      }
+      #profilImage {
+        border-radius: 50%;
+        max-width: 60px;
+        height: 60px;
+      }
+      #footer p {
+        line-height: 10px;
+      }
+      #nameAndDate {
+        margin-left: 10px;
+      }
+      #nameAndDate #name {
+        font-weight: 700;
+      }
+      #nameAndDate #date {
+        color: hsl(212, 23%, 69%);
+      }
+      #shareicon {
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 50%;
+        margin-right: 0;
+        margin-left: auto;
+        width: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header"><img src="images/drawers.jpg" /></div>
+      <div id="main">
+        <p id="para1">
+          <strong
+            >Shift the overall look and feel by adding these wonderful touches
+            to furniture in your home</strong
+          >
+        </p>
+        <p id="para2">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </div>
+      <div id="footer">
+        <img id="profilImage" src="images/avatar-michelle.jpg" />
+        <div id="nameAndDate">
+          <p id="name">Michelle Appleton</p>
+          <p id="date">28 Jun 2020</p>
+        </div>
+          <div id="shareDiv">
+            <img id="shareicon" src="images/icon-share.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   28 Jun 2020
+    Share -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
